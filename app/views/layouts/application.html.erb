@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CcGenerator</title>
+  <title>CC Generator</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<header class="navbar navbar-inner">
+	  <div class="container">
+			  <%=link_to "Gerador", root_path, {class:"brand"}%>
+	      <nav class="nav-collapse">
+	        <ul class="nav">
+	        </ul>
+	      </nav>
+	    </div>
+	</header>
+	<div class= "container">
 <%= yield %>
-
+</div>
 </body>
 </html>
