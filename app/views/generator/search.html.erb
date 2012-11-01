@@ -1,8 +1,6 @@
-<div class="span12 offset4">
-<%= form_tag ("/view") do%>
+<%= form_tag "/view",:class => 'form_search' do %>
 <%= label_tag :Operadora %><br />
 	<%= select_tag "Flag", options_from_collection_for_select(Flag.all, "id", "name")%>
 	<br/>
 	<%=submit_tag "Gerar" ,{:class=>"btn btn-primary"}%>
 <%end%>
-</div>
